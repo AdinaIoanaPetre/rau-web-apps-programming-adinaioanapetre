@@ -8,13 +8,52 @@
     <link rel="stylesheet" href="./styles/home.css">
     <title>HandyHub - Product Details</title>
     <style>
-
-        .product-gallery {
-          border: 1px;
-          background-color: lightblue;    
-          text-align: center;
+        .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 30px;
+        padding: 50px;
         }
-        
+
+        .grid-container > div {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+        border: 2px outset;
+        }
+
+        .item1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        }
+
+        .item2 {
+        grid-row: 2;
+        }
+
+        .item3 {
+        grid-row: 2;
+        }
+
+        .item4 {
+        grid-row: 3;
+        }
+
+        .item5 {
+        grid-row: 3;
+        }
+
+        div {
+            background-color: white;
+        }
+        input {
+            float: right;
+            text-align: center;
+        }
+        label {
+            float: right;
+        }
+
     </style>
 </head>
 <body>
@@ -27,7 +66,64 @@
                 <button class="nav-link btn btn-primary btn-grad-blue" onclick="logout()">Logout</a>
             </div>
         </nav>
-    <!-- Header Section -->
+    
+       
+        <div class="grid-container">
+          <div class="item1">
+            <input type="text" id="ostatus" name="ostatus" value="Delivered" readonly>
+            <label for="ostatus">Status:</label>
+            <br><br>
+
+            <h1>Order ID 1234567</h1>
+
+            <table>
+                <tr>
+                  <th>Product</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Total price</th>
+                  <th>VAT</th>
+                </tr>
+                <tr>
+                  <td>Hamburger MacPuisor</a></td>
+                  <td>15</td>
+                  <td>2</td>
+                  <td>30</td>
+                  <td>4.79</td>
+                </tr>
+                <tr>
+                    <td>Summer salad</a></td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>0.63</td>
+                  </tr>
+                  <tr>
+                    <td>Lemon tea</a></td>
+                    <td>7</td>
+                    <td>1</td>
+                    <td>7</td>
+                    <td>1.12</td>
+                  </tr>
+
+              </table>
+              <p>Total price = 41 Ron</p>
+
+          </div>
+          <div class="item2">
+          <h2>Delivery address</h2>
+          </div>
+           <div class="item3">
+            <h2>Billing address</h2>
+          </div>
+          <div class="item4">
+          <p>Strada Minutata nr.10, Sector 5, Bucuresti</p>
+          </div>
+           <div class="item5">
+          <p>Strada Fermecata nr.12, Sector 2, Bucuresti.</p>
+          </div>
+        </div>
+
     <!-- Order Details Section -->
     <section class="order-details-section">
         <!-- Status Frame Section -->
