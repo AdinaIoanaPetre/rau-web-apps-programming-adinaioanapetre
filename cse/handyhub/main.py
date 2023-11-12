@@ -2,8 +2,8 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import pandas as pd 
 
-USERS_FILE = "C:/Users/petre/Dropbox/Projects/rau-web-apps-programming/cse/handyhub/data/users.csv"
-PRODUCTS_FILE = "C:/Users/petre/Dropbox/Projects/rau-web-apps-programming/cse/handyhub/data/products.csv"
+USERS_FILE = "C:/Users/Adina/OneDrive - Romanian-American University (STUD)/Year 3/WebApplications/rau-web-apps-programming/cse/handyhub/data/users.csv"
+PRODUCTS_FILE = "C:/Users/Adina/OneDrive - Romanian-American University (STUD)/Year 3/WebApplications/rau-web-apps-programming/cse/handyhub/data/products.csv"
 
 
 app = Flask("homework_api")
