@@ -1,2 +1,1 @@
-# rau-web-apps-programming-adinaioanapetre
-For my Web Programming Course
+# rau-web-apps-programming
