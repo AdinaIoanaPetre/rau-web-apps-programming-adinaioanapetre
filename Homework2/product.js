@@ -25,7 +25,7 @@ function editProduct() {
 
 // Add event listener to the button element
 
-function uploadFiles() {
+function uploadFiles(event) {
     console.log("Eventul este " +event);
     event.preventDefault();
    // const uploadButton = document.getElementById("uploadButton");
