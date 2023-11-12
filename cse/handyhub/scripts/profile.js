@@ -14,7 +14,7 @@ if (userId) {
     request.setRequestHeader("Content-Type", "application/json");
     
     request.onload = uploadProfile; // we can call uploadProfile if we eant to upload from data file or,
-                                    // we can call uploadProfileFromLocalStorage if we wantr to upload from local storage
+                                    // we can call uploadProfileFromLocalStorage if we want to upload from local storage
     request.onerror = requestError;
     request.send();
     
